@@ -205,13 +205,21 @@ h2 {
   text-align: center;
 }
 
+#shops h3 {
+  text-decoration:underline; 
+}
+
 a {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 #shops a:hover {
   color: black;
+}
+
+#shops a:hover #shops h3 {
+ color:blue; 
 }
 
 .redbubblebox:hover {
