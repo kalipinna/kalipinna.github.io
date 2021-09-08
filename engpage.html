@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>kalipinna english version</title>
-    <link rel="icon" type="image/gif" href="favicon.ico" />
+  <link rel="icon" type="image/gif" href="favicon.ico" />
   <link rel="stylesheet" href="landing.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -193,6 +193,31 @@
       paddingH()
     });
   </script>
+
+  <script>
+    $(document).ready(function() {
+
+
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          var naviHeight = $('#navigation').height();
+          var realOffset = $(hash).offset().top - naviHeight
+
+          $('html, body').animate({
+            scrollTop: realOffset
+          }, 800, function() {
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+
 
 </body>
 
