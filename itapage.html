@@ -176,6 +176,26 @@
     });
   </script>
 
+  <script>
+    function paddingH() {
+      let naviheight = $('#navigation').height() + 30;
+
+      $(window).ready(function() {
+
+        $("#header").css({
+          paddingTop: naviheight
+        })
+
+      });
+    }
+
+    paddingH();
+
+
+    window.addEventListener("resize", function() {
+      paddingH()
+    });
+  </script>
 
 </body>
 
