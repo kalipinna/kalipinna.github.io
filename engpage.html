@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>kalipinna english version</title>
-  <link rel="icon" type="image/gif" href="favicon.ico" />
-  <link rel="stylesheet" href="landing.css">
+  <link rel="icon" type="image/gif" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/landing.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lemon&family=Lobster&family=Montserrat:ital,wght@0,400;0,800;1,400;1,700&family=Shrikhand&display=swap" rel="stylesheet">
@@ -26,11 +26,10 @@
   <div id="totop"><i class="cp cp-arrow-up"></i>
   </div>
 
-
-
   <section id="page">
 
     <div id="navigation">
+      <button id=navibutton>navi</button>
       <a href="index.html"><i class="cp cp-home-o"></i> back</a>
       <a href="https://instagram.com/kalipinna_ele"><i class="cp cp-instagram"></i>      ig</a>
       <a href="https://www.facebook.com/Kali-Pinna-109766414665810"><i class="cp cp-facebook-o"></i>fb</a>
@@ -72,17 +71,20 @@
       <div class="fix">redbubble however only allows <b>ONE</b> background color for each item, so what if you wanted to see what a design would look like in green, red, yellow, blue, and pick your favorite? <br>then <span style="text-decoration: underline 3px; font-style: italic;">go to my teespring shop</span>        and on the first rows you'll find a pillow for each of my designs (followed by more products)</div>
       <!--end of fix-->
 
-      <img src="Cattura.PNG" id="pillows" data-aos="flip-down" alt="examples of rows with pillows on teespring">
+      <img src="images/Cattura.PNG" id="pillows" data-aos="flip-down" alt="examples of rows with pillows on teespring">
 
       <div class="fix" data-aos="zoom-in"> click on one and suddenly lots of color-options! find out if there is a combination you want:</div>
       <!--end of fix-->
-      <img src="girl-let-your-heart-hold-fast-purple-_-kalipinna---Opera-2021-09-06-22-57-25.gif" data-aos="flip-up" alt="gif that shows how you can click on many different color options">
+      <img src="images/girl-let-your-heart-hold-fast-purple-_-kalipinna---Opera-2021-09-06-22-57-25.gif" data-aos="flip-up" alt="gif that shows how you can click on many different color options">
 
       <div class="fix" data-aos="zoom-in"><b>send me a bubblemail on redbubble or a message me via socials and if it can be done I'll happily make the product with the new colors for you!</b> <br> (I'll have to make an entire separate one, same design different color, that's why it has
         to be on request, I'll let you know when it's up). </div>
       <!--end of fix-->
 
+    </div>
+    <!--end of howto-->
 
+    <div id="suggestions">
 
       <div class="easy" data-aos="fade-right">It can be as easy as "hi, I'd like a bag with your "spaghetti: I will be dramatic" on red in your redbubble shop".
         <br> <br> Note that the final color will depend on the shop's printer, I only make the designs!
@@ -94,19 +96,19 @@
       </div>
       <!-- end of color-->
     </div>
-    <!--end of howto-->
+    <!--end of suggestions-->
 
-    <img id="divider" src="9.png" alt="">
+    <img id="divider" src="images/images/9.png" alt="">
 
     <div id="teespringsection"> right now on teespring, besides the pillows which are necessary to show color options, a few designs already have lots of other products enabled. The only downside of this website is that the server is slow with the upload, which means it will take
       some time for me to copy everything there, and that most items will only work with transparent designs: if there is anything you'd like to buy from there that you've seen on redbubble don't hesitate letting me know! It offers so many interesting
       products, like yoga mats, beach towels, water bottles...
     </div>
-    <img src="teespring.gif" data-aos="flip-down" alt="samples of my teespring store">
+    <img src="images/teespring.gif" data-aos="flip-down" alt="samples of my teespring store">
     <div id="threadlesssection"> I'm already adding designs to my threadless shop, they have special products like weekend bags that can be fully personalized (I like to play with gradients in their backgrounds) + like I said threadless lets me donate part of my earnings to charity,
       it offers different options and I'm picking them randomly (and not based on what's featured on the design), but I want to hit them all! Again, if there is a specific design you'd like to get from here and not redbubble, ask and I'll give it priority!
 
-      <img src="Spaghetti_-I-will-be-dramatic-first.gif" data-aos="flip-down" alt="samples from my threadless store">
+      <img src="images/Spaghetti_-I-will-be-dramatic-first.gif" data-aos="flip-down" alt="samples from my threadless store">
     </div>
     <div id="discounts" data-aos="zoom-in">
 
@@ -218,6 +220,11 @@
     });
   </script>
 
+  <script>
+    $('#navibutton').click(function() {
+      $('#navigation a').toggle()
+    })
+  </script>
 
 </body>
 
