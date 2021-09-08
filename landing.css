@@ -28,12 +28,35 @@ html {
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  height: 0px;
+  width: 2px;
+  background: #000;
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+  z-index: 19;
+}
+
+ ::-webkit-scrollbar-thumb {
+  background: rgb(136, 7, 136);
+}
+
+ ::selection {
+  color: #fff;
+  background-color: #000;
+}
+
 body {
   overflow-y: scroll;
   overflow-x: hidden;
   font-size: 16px;
   margin: 0px;
   font-family: 'roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 img,
@@ -170,22 +193,11 @@ section {
   background-position: center;
   background-attachment: fixed;
   width: 100%;
-  height: max-content;
+  min-height: 50vh;
   display: block;
   color: white;
   padding-top: 100px;
   padding-bottom: 20px;
-}
-
-h2 {
-  font-size: 1.8rem;
-  font-family: shrikhand;
-  text-align: center;
-  width: max-content;
-  margin-left: auto;
-  margin-right: auto;
-  border-top: double #000 4px;
-  border-bottom: double #000 4px;
 }
 
 #myshops {
@@ -197,6 +209,17 @@ h2 {
   flex-flow: row wrap;
   justify-content: center;
   margin-top: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-family: shrikhand;
+  text-align: center;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: double #000 4px;
+  border-bottom: double #000 4px;
 }
 
 #shops .box {
@@ -211,17 +234,13 @@ h2 {
   text-decoration: underline;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 #shops a:hover {
   color: black;
 }
 
-#shops a:hover #shops h3 {
-  color: blue;
+#shops .box:hover>h3 {
+  color: #860671;
+  transition: color 0.5s;
 }
 
 .redbubblebox:hover {
