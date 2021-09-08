@@ -57,6 +57,12 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  transition: color 2s;
+}
+
+a:hover {
+  color: #8d26c9;
+  transition: color 2s;
 }
 
 img,
