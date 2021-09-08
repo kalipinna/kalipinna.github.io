@@ -112,15 +112,20 @@ section {
 }
 
 #oneandtwo {
-  max-width: 100%;
+  max-width: 98%;
+  width: 1300px;
   margin: 3rem auto;
-  width: 500px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   row-gap: 40px;
   opacity: 0;
   animation: show 3s forwards 1s;
+}
+
+.one,
+.two {
+  margin: auto;
 }
 
 @keyframes show {
@@ -403,12 +408,6 @@ h1 span {
   section {
     font-size: 1.3rem;
   }
-  #intro .one {
-    margin-left: -40px;
-  }
-  #intro .two {
-    margin-left: 40px;
-  }
   #cat {
     width: 300px;
     height: 300px;
@@ -451,5 +450,10 @@ h1 span {
   #bgimages img {
     width: 250px;
     height: 250px;
+  }
+  .one,
+  .two {
+    width: 500px;
+    margin: 20px;
   }
 }
