@@ -65,6 +65,12 @@ a:hover {
   transition: color 2s;
 }
 
+#intro video,
+#intro iframe {
+  max-height: 80vh;
+  background-color: black;
+}
+
 img,
 video {
   max-width: 90%;
