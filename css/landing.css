@@ -1,3 +1,8 @@
+@font-face {
+  font-family: heybetty;
+  src: url('HeyBetty-Regular.ttf');
+}
+
 #totop {
   /* button to scroll back up */
   box-shadow: 0px 0px 13px #fff;
@@ -323,6 +328,17 @@ h1 span {
 .fix {
   margin: 30px auto;
   text-align: center;
+}
+
+.fix ul li {
+  text-align: left;
+  list-style-type: square;
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+
+.fix ul li:nth-child(odd)::marker {
+  color: #ff0000;
 }
 
 #pillows {
