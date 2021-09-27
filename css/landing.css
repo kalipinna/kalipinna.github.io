@@ -77,13 +77,15 @@ a:hover {
 }
 
 img,
-video {
+video,
+iframe {
   max-width: 90%;
   display: block;
   margin: 30px auto;
 }
 
-video {
+video,
+iframe {
   width: 700px;
 }
 
