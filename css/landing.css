@@ -241,6 +241,20 @@ button {
   color: white;
 }
 
+#header h1,
+#cat {
+  animation: appear 3s forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 #myshops {
   padding: 3rem 0rem;
 }
