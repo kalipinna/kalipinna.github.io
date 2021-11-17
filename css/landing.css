@@ -408,7 +408,8 @@ h1 span {
 
 #teespringsection,
 #threadlesssection,
-#redbubblesection {
+#redbubblesection,
+#society6section {
   max-width: 80%;
   margin: 0 auto;
   text-align: center;
@@ -438,8 +439,18 @@ h1 span {
   transition: border-top-color 2s;
 }
 
-#threadlesssection {
+#threadlesssection,
+#teespringsection {
   border-bottom: 4px dotted #000;
+}
+
+#society6pics {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#society6pics img {
+  width: 30%;
 }
 
 #discounts {
