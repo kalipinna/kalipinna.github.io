@@ -246,6 +246,17 @@ button {
   animation: appear 3s forwards;
 }
 
+#cat2 {
+  animation: rotatingcat 5s infinite;
+  border-radius: 100px;
+}
+
+@keyframes rotatingcat {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes appear {
   0% {
     opacity: 0;
@@ -409,7 +420,9 @@ h1 span {
 #teespringsection,
 #threadlesssection,
 #redbubblesection,
-#society6section {
+#society6section,
+.aboutme,
+.schedule {
   max-width: 80%;
   margin: 0 auto;
   text-align: center;
@@ -440,7 +453,8 @@ h1 span {
 }
 
 #threadlesssection,
-#teespringsection {
+#teespringsection,
+#society6section {
   border-bottom: 4px dotted #000;
 }
 
