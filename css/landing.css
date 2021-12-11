@@ -453,17 +453,20 @@ h1 span {
 }
 
 #threadlesssection,
-#teespringsection,
-#society6section {
+#teespringsection {
   border-bottom: 4px dotted #000;
 }
 
-#society6pics {
+#society6pics,
+#teespringpics,
+#threadlesspics {
   display: flex;
   flex-flow: row wrap;
 }
 
-#society6pics img {
+#society6pics img,
+#teespringpics img,
+#threadlesspics img {
   width: 30%;
 }
 
